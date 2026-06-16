@@ -1068,6 +1068,16 @@ function initializeEventListeners() {
     });
   }
 
+  // Auto-close mobile drawer on link click
+  const drawerLinks = document.querySelectorAll('.drawer-link');
+  drawerLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (mobileDrawer) {
+        mobileDrawer.classList.remove('active');
+      }
+    });
+  });
+
   // Cart Drawer triggers
   if (cartToggleBtn) {
     cartToggleBtn.addEventListener('click', openCartDrawer);

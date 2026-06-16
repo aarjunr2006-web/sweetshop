@@ -2837,14 +2837,63 @@ input:checked + .slider-toggle:before {
     display: flex;
   }
 
+  /* Header Optimization */
+  .logo-brand {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .logo-subtitle {
+    font-size: 0.65rem;
+    letter-spacing: 2px;
+  }
+  
+  .cart-total-header {
+    display: none;
+  }
+  
+  .header-actions {
+    gap: 8px;
+  }
+  
+  .cart-btn-action {
+    padding: 8px 12px;
+  }
+  
+  .header-container {
+    padding: 0 12px;
+  }
+
+  /* Hero Section */
   .hero-title {
     font-size: 2.2rem;
   }
+  
+  .hero-img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
 
+  /* Categories Grid */
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .category-card {
+    padding: 16px 8px;
+    gap: 8px;
+  }
+  
+  .category-icon-wrapper {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .category-card h3 {
+    font-size: 0.95rem;
+  }
 
+  /* Dynamic Menu Grid */
   .menu-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2881,6 +2930,12 @@ input:checked + .slider-toggle:before {
     justify-content: space-between;
   }
 
+  /* Loyalty Calculator input adjustment */
+  .calculator-inputs {
+    flex-direction: column;
+    gap: 12px;
+  }
+
   .form-row {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -2890,8 +2945,14 @@ input:checked + .slider-toggle:before {
     padding: 24px;
   }
 
+  /* Contact details and action buttons stacking */
   .contact-card {
     padding: 24px;
+  }
+  
+  .contact-actions-row {
+    flex-direction: column;
+    gap: 12px;
   }
 
   .footer-container {
@@ -2906,22 +2967,33 @@ input:checked + .slider-toggle:before {
   }
 }
 
+/* Medium Mobile (Max 600px) */
+@media screen and (max-width: 600px) {
+  /* Change menu items layout to single column on mobile */
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .product-card {
+    max-width: 450px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
 /* Small Screens (Max 480px) */
 @media screen and (max-width: 480px) {
   .hero-title {
     font-size: 1.8rem;
   }
+  
+  .hero-actions-container {
+    flex-direction: column;
+    gap: 12px;
+  }
 
   .categories-grid {
     grid-template-columns: 1fr;
-  }
-
-  .menu-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .calculator-inputs {
-    flex-direction: column;
   }
 
   .loyalty-card-container {
@@ -2931,8 +3003,5 @@ input:checked + .slider-toggle:before {
   .tracking-actions {
     grid-template-columns: 1fr;
   }
-
-  .contact-actions-row {
-    flex-direction: column;
-  }
 }
+
