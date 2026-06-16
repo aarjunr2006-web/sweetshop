@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bajrang Sweets | Premium Indian Sweets & Fine Dining Restaurant</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Bajrang Sweets | Premium Indian Sweets & Fine Dining Restaurant">
+  <meta name="description" content="Savor the authentic taste of royal Indian sweets, rich curries, hand-crafted chaats, and snacks. Experience luxury family dining and fast online delivery with Bajrang Sweets.">
+  <meta name="keywords" content="Indian Sweets, Mithai, Restaurant, Online Food Delivery, Pure Ghee Sweets, Bajrang Sweets, Family Dining, Catering, Samosa, Kaju Katli">
+  <meta name="author" content="Bajrang Sweets">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bajrangsweets.example.com/">
+  <meta property="og:title" content="Bajrang Sweets | Premium Indian Sweets & Fine Dining">
+  <meta property="og:description" content="Authentic royal Indian sweets, premium meals, and snacks delivered directly to your doorstep. Pure ingredients and rich heritage.">
+  <meta property="og:image" content="assets/hero_banner.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://bajrangsweets.example.com/">
+  <meta property="twitter:title" content="Bajrang Sweets | Premium Indian Sweets & Fine Dining">
+  <meta property="twitter:description" content="Authentic royal Indian sweets, premium meals, and snacks delivered directly to your doorstep. Pure ingredients and rich heritage.">
+  <meta property="twitter:image" content="assets/hero_banner.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome / Icons via Lucide CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data (JSON-LD Schema Markup) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Bajrang Sweets",
+    "image": "assets/hero_banner.png",
+    "@id": "https://bajrangsweets.example.com",
+    "url": "https://bajrangsweets.example.com",
+    "telephone": "+919784842300",
+    "priceRange": "$$",
+    "menu": "https://bajrangsweets.example.com/menu",
+    "servesCuisine": "Indian, Vegetarian, Sweets, Desserts",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Banar Police Station",
+      "addressLocality": "Jodhpur",
+      "addressRegion": "Rajasthan",
+      "postalCode": "342027",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 28.4595,
+      "longitude": 77.0266
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "08:00",
+        "closes": "23:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/bajrangsweets",
+      "https://www.instagram.com/bajrangsweets"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span class="announcement-text">✨ Celebrating Sweet Traditions! Use coupon code <strong class="coupon-highlight">FESTIVE10</strong> for 10% off orders above ₹499! ✨</span>
+  </div>
+
+  <!-- Header Section -->
+  <header class="main-header" id="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <a href="#" class="logo-link">
+        <div class="logo-text">
+          <span class="logo-brand">Bajrang</span>
+          <span class="logo-subtitle">Sweets</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#menu-section" class="nav-link">Menu</a></li>
+          <li><a href="#offers-section" class="nav-link">Offers</a></li>
+          <li><a href="#about-section" class="nav-link">Our Story</a></li>
+          <li><a href="#catering-section" class="nav-link">Catering</a></li>
+          <li><a href="#reviews-section" class="nav-link">Reviews</a></li>
+          <li><a href="#contact-section" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Icons -->
+      <div class="header-actions">
+        <!-- Search bar toggle (desktop only) -->
+        <button id="search-toggle-btn" class="action-btn" aria-label="Search items">
+          <i data-lucide="search"></i>
+        </button>
+        
+        <!-- Favorites Counter -->
+        <button id="wishlist-toggle-btn" class="action-btn" aria-label="View wishlist">
+          <i data-lucide="heart"></i>
+          <span class="badge" id="wishlist-count">0</span>
+        </button>
+
+        <!-- Cart Counter -->
+        <button id="cart-toggle-btn" class="action-btn cart-btn-action" aria-label="Open shopping cart">
+          <i data-lucide="shopping-bag"></i>
+          <span class="badge" id="cart-count">0</span>
+          <span class="cart-total-header" id="cart-total-text">₹0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobile-menu-btn" class="action-btn mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i data-lucide="menu" id="menu-icon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Hidden Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+      <div class="search-box-container">
+        <input type="text" id="header-search-input" placeholder="Search sweets, chaat, thali, lassi...">
+        <button id="close-search-btn" class="close-btn"><i data-lucide="x"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <h3>Bajrang Sweets</h3>
+      <button id="close-drawer-btn" class="close-btn"><i data-lucide="x"></i></button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#" class="drawer-link">Home</a></li>
+      <li><a href="#menu-section" class="drawer-link">Menu</a></li>
+      <li><a href="#offers-section" class="drawer-link">Offers</a></li>
+      <li><a href="#about-section" class="drawer-link">Our Story</a></li>
+      <li><a href="#catering-section" class="drawer-link">Catering & Bulk Orders</a></li>
+      <li><a href="#reviews-section" class="drawer-link">Reviews</a></li>
+      <li><a href="#contact-section" class="drawer-link">Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <p>📞 Call to Order: +91 97848 42300</p>
+      <div class="drawer-socials">
+        <a href="#"><i data-lucide="instagram"></i></a>
+        <a href="#"><i data-lucide="facebook"></i></a>
+        <a href="#"><i data-lucide="twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="hero-tagline">✨ The Royal Standard of Indian Taste</span>
+          <h1 class="hero-title">Savor the Heritage of <span class="accent-gold">Royal Indian Flavors</span></h1>
+          <p class="hero-description">Experience handcrafted traditional sweets made with pure ghee, authentic chaat, and gourmet family dining. Freshly prepared, elegantly served.</p>
+          <div class="hero-actions-container">
+            <a href="#menu-section" class="btn btn-primary btn-lg"><i data-lucide="utensils-crosses"></i> Order Online</a>
+            <a href="#offers-section" class="btn btn-secondary btn-lg"><i data-lucide="tag"></i> View Offers</a>
+          </div>
+          <div class="hero-features">
+            <div class="h-feature-item">
+              <i data-lucide="shield-check"></i>
+              <span>100% Pure Ghee & Hygienic</span>
+            </div>
+            <div class="h-feature-item">
+              <i data-lucide="truck"></i>
+              <span>Lightning Fast Delivery</span>
+            </div>
+            <div class="h-feature-item">
+              <i data-lucide="party-popper"></i>
+              <span>Catering & Gift Boxes</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="glow-effect"></div>
+          <img src="assets/hero_banner.png" alt="Platter of premium Indian Sweets" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section" id="categories-section">
+      <div class="section-container">
+        <div class="section-title-wrapper text-center">
+          <span class="section-subtitle">Exquisite Options</span>
+          <h2 class="section-title">Explore Our Categories</h2>
+          <div class="ornament"></div>
+        </div>
+
+        <div class="categories-grid" id="categories-container">
+          <!-- Dynamically generated category cards -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="offers-section" id="offers-section">
+      <div class="section-container">
+        <div class="section-title-wrapper text-center">
+          <span class="section-subtitle">Specials For You</span>
+          <h2 class="section-title">Festival Discounts & Combos</h2>
+          <div class="ornament"></div>
+        </div>
+
+        <div class="offers-carousel">
+          <!-- Offer Card 1 -->
+          <div class="offer-card marquee-card">
+            <div class="offer-badge">10% OFF</div>
+            <div class="offer-content">
+              <h3>Festival Sweet Box Discount</h3>
+              <p>Save 10% on assorted luxury boxes. Perfect for gifting!</p>
+              <div class="coupon-code">Code: <strong>FESTIVE10</strong></div>
+              <button class="btn btn-sm btn-gold apply-coupon-btn" data-code="FESTIVE10">Apply Code</button>
+            </div>
+          </div>
+
+          <!-- Offer Card 2 -->
+          <div class="offer-card marquee-card">
+            <div class="offer-badge">₹50 OFF</div>
+            <div class="offer-content">
+              <h3>First Order Special Offer</h3>
+              <p>Get flat ₹50 discount on your first online order above ₹299.</p>
+              <div class="coupon-code">Code: <strong>WELCOME50</strong></div>
+              <button class="btn btn-sm btn-gold apply-coupon-btn" data-code="WELCOME50">Apply Code</button>
+            </div>
+          </div>
+
+          <!-- Offer Card 3 -->
+          <div class="offer-card marquee-card">
+            <div class="offer-badge">FREE DELIVERY</div>
+            <div class="offer-content">
+              <h3>Royal Family Feast Combo</h3>
+              <p>Buy Paneer Tikka Masala, Dal Makhani, Roti, and Gulab Jamun at flat ₹499 & get free delivery!</p>
+              <button class="btn btn-sm btn-gold add-combo-btn" data-combo-id="combo-family">Order Combo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dynamic Menu Section with Ordering -->
+    <section class="menu-section" id="menu-section">
+      <div class="section-container">
+        <div class="section-title-wrapper text-center">
+          <span class="section-subtitle">Our Menu</span>
+          <h2 class="section-title">Order Handcrafted Tastes</h2>
+          <div class="ornament"></div>
+        </div>
+
+        <!-- Filter Controls Bar -->
+        <div class="filter-controls-bar">
+          <!-- Search box -->
+          <div class="menu-search-wrapper">
+            <i data-lucide="search" class="search-icon-inside"></i>
+            <input type="text" id="menu-search-input" placeholder="Search sweets, snacks, thalis, lassi...">
+            <button id="clear-search-btn" class="clear-btn hidden"><i data-lucide="x"></i></button>
+          </div>
+
+          <!-- Vegetarian filter toggle -->
+          <div class="veg-toggle-wrapper">
+            <label class="toggle-switch">
+              <input type="checkbox" id="veg-only-checkbox">
+              <span class="slider-toggle"></span>
+            </label>
+            <span class="veg-label-text"><span class="veg-dot-icon">🟢</span> Veg Only</span>
+          </div>
+
+          <!-- Sorting dropdown -->
+          <div class="sort-wrapper">
+            <label for="menu-sort-select" class="sort-label-text">Sort By:</label>
+            <select id="menu-sort-select" class="sort-select">
+              <option value="default">Popularity</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Top Rated</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Category Pills (Horizontal Navigation) -->
+        <div class="category-pills-container" id="category-pills">
+          <!-- Generated via JS -->
+        </div>
+
+        <!-- Active Filter Indicator -->
+        <div class="active-filters-summary hidden" id="active-filters-summary">
+          <span id="filters-summary-text">Showing items...</span>
+          <button id="reset-filters-btn" class="reset-link">Reset all filters</button>
+        </div>
+
+        <!-- Menu Products Grid -->
+        <div class="menu-grid" id="menu-items-grid">
+          <!-- Product cards will be dynamically rendered here -->
+        </div>
+
+        <!-- No products found state -->
+        <div class="no-products-found hidden" id="no-products-found">
+          <i data-lucide="search-code" class="no-results-icon"></i>
+          <h3>No items match your criteria</h3>
+          <p>Try refining your search, clearing categories, or toggling the Veg Only filter.</p>
+          <button class="btn btn-primary" id="clear-all-filters-btn">Clear All Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about-section">
+      <div class="section-container">
+        <div class="about-container">
+          <div class="about-image-wrapper">
+            <img src="assets/restaurant_dining.png" alt="Bajrang Sweets Interior Dining Room" class="about-img">
+            <div class="experience-badge">
+              <span class="badge-num">25+</span>
+              <span class="badge-lbl">Years of Sweet Heritage</span>
+            </div>
+          </div>
+          <div class="about-content">
+            <span class="section-subtitle">Since 2001</span>
+            <h2 class="section-title text-left">Crafting Royal Indian Flavors with Passion</h2>
+            <div class="ornament ornament-left"></div>
+            <p class="about-description">
+              At <strong>Bajrang Sweets</strong>, we bring to your table the finest culinary secrets from royal kitchens of India. For over two decades, our master chefs (Halwais) have handcrafted premium Indian sweets using 100% pure organic ghee, rich saffron (Kesar), and handpicked nuts.
+            </p>
+            <p class="about-description">
+              We maintain absolute hygiene and use state-of-the-art kitchen facilities to serve you delicious thalis, savory snacks, and hot street side delights in an elegant, royal ambiance suited for premium family dining.
+            </p>
+            <ul class="about-bullets">
+              <li><i data-lucide="check-circle" class="bullet-icon"></i> 100% Vegetarian & Pure Ingredients</li>
+              <li><i data-lucide="check-circle" class="bullet-icon"></i> Traditional family recipes passed down generations</li>
+              <li><i data-lucide="check-circle" class="bullet-icon"></i> Strictly monitored sanitation & high-end hygiene standards</li>
+            </ul>
+            <div class="about-author">
+              <span class="author-signature">Bajrang Sweets Family</span>
+              <span class="author-title">Founders & Master Chefs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loyalty / Rewards Section -->
+    <section class="loyalty-section" id="loyalty-section">
+      <div class="section-container">
+        <div class="loyalty-card-container">
+          <div class="loyalty-card-content">
+            <span class="loyalty-tag"><i data-lucide="award"></i> KESAR GOLD CLUB</span>
+            <h2>Earn Rewards on Every Sweet Bite!</h2>
+            <p>Join our Kesar Loyalty program today. Earn 1 point for every ₹10 spent online or in-store. Redeem points for free gulab jamuns, thalis, and festive boxes!</p>
+            
+            <div class="loyalty-calculator">
+              <h3>Calculate Your Rewards</h3>
+              <div class="calculator-inputs">
+                <input type="number" id="spending-input" placeholder="Enter planned spending amount (₹)" min="0">
+                <button class="btn btn-gold" id="calculate-points-btn">Calculate Points</button>
+              </div>
+              <div id="calc-result" class="calc-result hidden">
+                <p>You will earn <strong id="calc-points">0</strong> points worth <strong id="calc-value">₹0</strong> in cashback!</p>
+              </div>
+            </div>
+          </div>
+          <div class="loyalty-graphic">
+            <div class="loyalty-shield">
+              <i data-lucide="gem" class="gold-gem"></i>
+              <span class="loyalty-tier">VIP Member</span>
+            </div>
+            <div class="loyalty-benefits">
+              <div class="benefit-item">
+                <i data-lucide="sparkles"></i>
+                <div>
+                  <strong>Exclusive Discounts</strong>
+                  <p>Members-only codes sent via SMS/Email</p>
+                </div>
+              </div>
+              <div class="benefit-item">
+                <i data-lucide="cake"></i>
+                <div>
+                  <strong>Birthday Treats</strong>
+                  <p>Free dessert on your special day</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catering / Bulk Inquiry Section -->
+    <section class="catering-section" id="catering-section">
+      <div class="section-container">
+        <div class="section-title-wrapper text-center">
+          <span class="section-subtitle">Grand Events & Corporate Gifting</span>
+          <h2 class="section-title">Bulk Sweets & Catering Inquiry</h2>
+          <div class="ornament"></div>
+        </div>
+
+        <div class="catering-layout">
+          <div class="catering-info-panel">
+            <h3>Let us cater your special moments</h3>
+            <p>From weddings and housewarmings to corporate gifting and festival hampers, make your celebrations extra sweet with custom menus and beautiful gift packaging from Bajrang Sweets.</p>
+            <div class="catering-feature">
+              <i data-lucide="users"></i>
+              <div>
+                <strong>From 20 to 1000+ Guests</strong>
+                <p>Custom menus catered with high-end premium table layouts.</p>
+              </div>
+            </div>
+            <div class="catering-feature">
+              <i data-lucide="gift"></i>
+              <div>
+                <strong>Premium Sweet Hampers</strong>
+                <p>Curated festival boxes with custom labels and ribbons for corporate branding.</p>
+              </div>
+            </div>
+            <div class="catering-contact">
+              <p>Direct Hotlines:</p>
+              <a href="tel:+919784842300" class="c-link"><i data-lucide="phone-call"></i> +91 97848 42300</a>
+              <a href="mailto:catering@bajrangsweets.com" class="c-link"><i data-lucide="mail"></i> catering@bajrangsweets.com</a>
+            </div>
+          </div>
+
+          <div class="catering-form-panel">
+            <form id="catering-inquiry-form" class="inquiry-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-name">Your Name *</label>
+                  <input type="text" id="c-name" name="name" required placeholder="Ex. Arjun Rathore">
+                </div>
+                <div class="form-group">
+                  <label for="c-phone">Phone Number *</label>
+                  <input type="tel" id="c-phone" name="phone" required placeholder="Ex. 9784842300">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-email">Email Address</label>
+                  <input type="email" id="c-email" name="email" placeholder="Ex. name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="c-type">Inquiry Type *</label>
+                  <select id="c-type" name="type" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="wedding">Wedding / Reception Catering</option>
+                    <option value="party">Birthday / Private House Party</option>
+                    <option value="corporate-meals">Corporate Dining / Catering</option>
+                    <option value="corporate-gifts">Corporate Sweet Gift Boxes</option>
+                    <option value="other">Other Events</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="c-date">Event Date</label>
+                  <input type="date" id="c-date" name="date">
+                </div>
+                <div class="form-group">
+                  <label for="c-guests">Estimated Guests / Sweet Boxes *</label>
+                  <input type="number" id="c-guests" name="guests" required min="10" placeholder="Min. 10">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="c-message">Tell us about your requirements *</label>
+                <textarea id="c-message" name="message" required rows="4" placeholder="Mention item choices, budget details, packaging preferences..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Submit Inquiry</button>
+            </form>
+            <div id="catering-success-msg" class="form-success-box hidden">
+              <i data-lucide="check-circle-2"></i>
+              <h4>Inquiry Received Successfully!</h4>
+              <p>Our catering coordinator will call you back within the next 2 hours. Thank you!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section class="reviews-section" id="reviews-section">
+      <div class="section-container">
+        <div class="section-title-wrapper text-center">
+          <span class="section-subtitle">Testimonials</span>
+          <h2 class="section-title">What Our Guests Say</h2>
+          <div class="ornament"></div>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="user-avatar-text">RM</div>
+              <div>
+                <h4>Rohan Mehta</h4>
+                <div class="stars"><i data-lucide="star" class="star-filled"></i><i data-lucide="star" class="star-filled"></i><i data-lucide="star" class="star-filled"></i><i data-lucide="star" class="star-filled"></i><i data-lucide="star" class="star-filled"></i></div>
+              </div>
+            </div>
+            <p class="review-text">"The Kaju Katli from Bajrang Sweets is incredibly soft, melts in your mouth, and has the perfect sweetness. We also order Paneer Tikka Masala and Bhature regularly. Pure, hygienic packaging."</p>
+            <span class="review-date">Verified Local Guide</span>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="user-avatar-text">AS</div>
+              <div>
+                <h4>Anjali Sharma</h4>
+                <div class="stars"><i data-lucide="star" class="star-filled"></i><i data-lucide="star" class="star-filled"></i><i data-lucide="star" class="star-filled"></i><i data-lucide="star" class="star-filled"></i><i data-lucide="star" class="star-filled"></i></div>
+              </div>
+            </div>
+            <p class="review-text">"Catered my daughter's first birthday party with Bajrang Sweets. Everything from the Golgappa counters to the sweet buffet was a massive hit. Prompt delivery and excellent setup coordination."</p>
+            <span class="review-date">Verified Family Customer</span>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="user-avatar-text">VK</div>
+              <div>
+                <h4>Vikram Kapoor</h4>
+                <div class="stars"><i data-lucide="star" class="star-filled"></i><i data-lucide="star" class="star-filled"></i><i data-lucide="star" class="star-filled"></i><i data-lucide="star" class="star-filled"></i><i data-lucide="star"></i></div>
+              </div>
+            </div>
+            <p class="review-text">"Excellent delivery packaging. Food arrived steaming hot. The Mango Lassi is phenomenal—very thick, not watered down. Their discount coupons work smoothly during checkout!"</p>
+            <span class="review-date">Verified Online Buyer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery-section">
+      <div class="section-container">
+        <div class="section-title-wrapper text-center">
+          <span class="section-subtitle">Visual Delights</span>
+          <h2 class="section-title">Sneak Peek into Our Kitchens</h2>
+          <div class="ornament"></div>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item item-wide">
+            <img src="assets/hero_banner.png" alt="Traditional Sweets Selection Box">
+            <div class="gallery-hover-overlay">
+              <span>Assorted Ghee Sweets</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/sweets_category.png" alt="Premium Gift Packaged Sweets">
+            <div class="gallery-hover-overlay">
+              <span>Gift Hampers</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/chaat_dining.png" alt="Delicious Chaat Platters">
+            <div class="gallery-hover-overlay">
+              <span>Street Side Snacks</span>
+            </div>
+          </div>
+          <div class="gallery-item item-tall">
+            <img src="assets/restaurant_dining.png" alt="Fine Dining Layout at Kesar">
+            <div class="gallery-hover-overlay">
+              <span>Luxurious Dining Rooms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="contact-section" id="contact-section">
+      <div class="section-container">
+        <div class="section-title-wrapper text-center">
+          <span class="section-subtitle">Reach Us</span>
+          <h2 class="section-title">Address, Timings & Location</h2>
+          <div class="ornament"></div>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-map-panel">
+            <!-- Styling map replacement since embedding maps requires API/iFrames. CSS Map placeholder is interactive and premium looking -->
+            <div class="custom-map-placeholder">
+              <div class="map-bg">
+                <!-- SVG map contours -->
+                <svg viewBox="0 0 400 300" width="100%" height="100%" class="map-svg-grid">
+                  <path d="M10,80 Q90,90 120,40 T300,100" fill="none" stroke="#EFEFEF" stroke-width="8"></path>
+                  <path d="M50,280 Q150,150 200,200 T380,50" fill="none" stroke="#EFEFEF" stroke-width="12"></path>
+                  <path d="M0,150 Q100,120 250,220 T400,160" fill="none" stroke="#e3d6cb" stroke-width="18"></path>
+                  <circle cx="250" cy="220" r="14" fill="#4A0E17" opacity="0.2" class="pulse-ring"></circle>
+                  <circle cx="250" cy="220" r="6" fill="#FF9933"></circle>
+                </svg>
+                <div class="map-tooltip">
+                  <strong>Bajrang Sweets</strong>
+                  <p>Near Banar Police Station, Jodhpur</p>
+                  <a href="https://maps.google.com" target="_blank" class="nav-direction-btn">Get Directions</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-details-panel">
+            <div class="contact-card">
+              <div class="contact-item">
+                <i data-lucide="map-pin" class="contact-icon"></i>
+                <div>
+                  <strong>Address</strong>
+                  <p>Near Banar Police Station,<br>Jodhpur, Rajasthan - 342027, India</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i data-lucide="clock" class="contact-icon"></i>
+                <div>
+                  <strong>Business Hours</strong>
+                  <p>Monday - Sunday: 08:00 AM - 11:00 PM</p>
+                  <span class="delivery-hour-span">🚗 Delivery Hours: 09:00 AM - 10:30 PM</span>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i data-lucide="phone" class="contact-icon"></i>
+                <div>
+                  <strong>Order Hotline & Inquiries</strong>
+                  <p><a href="tel:+919784842300" class="tel-link">+91 97848 42300</a></p>
+                </div>
+              </div>
+
+              <div class="contact-actions-row">
+                <a href="https://wa.me/919784842300" target="_blank" class="btn btn-whatsapp"><i data-lucide="message-square-more"></i> Order on WhatsApp</a>
+                <a href="tel:+919784842300" class="btn btn-outline"><i data-lucide="phone"></i> Call Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="footer-top">
+      <div class="footer-container">
+        <!-- Logo and info -->
+        <div class="footer-brand-col">
+          <h3 class="footer-title">Bajrang Sweets</h3>
+          <p>We preserve the rich culinary heritage of India, offering premium handcrafted sweets, street snacks, and fine vegetarian dining in an elegant, royal ambiance.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#hero-section">Home</a></li>
+            <li><a href="#menu-section">Menu</a></li>
+            <li><a href="#offers-section">Special Offers</a></li>
+            <li><a href="#about-section">Our Story</a></li>
+            <li><a href="#catering-section">Catering Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact details footer -->
+        <div class="footer-contact-col">
+          <h4>Customer Care</h4>
+          <p>📧 support@bajrangsweets.com</p>
+          <p>📞 +91 97848 42300</p>
+          <p>📍 Near Banar Police Station, Jodhpur, India</p>
+          <p class="loyalty-footer-prompt">Earn points: Use your phone number at checkout.</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter-col">
+          <h4>Join Our Newsletter</h4>
+          <p>Subscribe for festival coupon codes, recipe releases, and special event announcements.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <input type="email" id="news-email" required placeholder="Enter your email address" aria-label="Email for newsletter">
+            <button type="submit" class="btn btn-gold-solid">Subscribe</button>
+          </form>
+          <div id="newsletter-success" class="newsletter-success hidden">
+            <span>🎉 Thank you for subscribing! Check your email for special welcome gifts.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-container">
+        <p>&copy; 2026 Bajrang Sweets. All Rights Reserved. Crafted with love & pure ghee.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Delivery & Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART SIDEBAR DRAWER -->
+  <div class="cart-drawer-backdrop" id="cart-drawer-backdrop"></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <h3>Your Sweet Order (<span id="cart-drawer-count">0</span>)</h3>
+      <button id="close-cart-btn" class="close-btn" aria-label="Close cart"><i data-lucide="x"></i></button>
+    </div>
+
+    <!-- Cart items list (Scrollable) -->
+    <div class="cart-body" id="cart-items-container">
+      <!-- Generated via JS. Empty State shown by default -->
+      <div class="empty-cart-state">
+        <i data-lucide="shopping-bag" class="empty-cart-icon"></i>
+        <p>Your cart is empty.</p>
+        <p class="empty-subtext">Add traditional sweets or hot dishes to begin your ordering experience.</p>
+        <button class="btn btn-primary" id="start-shopping-btn">Explore Menu</button>
+      </div>
+    </div>
+
+    <!-- Cart Footer (Order calculations, Coupons, Checkout buttons) -->
+    <div class="cart-footer hidden" id="cart-footer-calculations">
+      <!-- Coupon Section -->
+      <div class="coupon-section">
+        <div class="coupon-input-wrapper">
+          <input type="text" id="coupon-code-input" placeholder="Enter coupon code (e.g. FESTIVE10)">
+          <button id="apply-coupon-btn" class="btn btn-gold">Apply</button>
+        </div>
+        <div id="coupon-message" class="coupon-msg"></div>
+      </div>
+
+      <!-- Calculation Rows -->
+      <div class="calc-rows">
+        <div class="calc-row">
+          <span>Subtotal</span>
+          <span id="summary-subtotal">₹0</span>
+        </div>
+        <div class="calc-row text-discount hidden" id="discount-row">
+          <span>Coupon Discount (<span id="applied-coupon-name"></span>)</span>
+          <span id="summary-discount">-₹0</span>
+        </div>
+        <div class="calc-row">
+          <span>Delivery Option</span>
+          <div class="delivery-toggle-container">
+            <button class="btn btn-xs btn-toggle-option active" id="delivery-option-btn">Delivery</button>
+            <button class="btn btn-xs btn-toggle-option" id="pickup-option-btn">Self Pickup</button>
+          </div>
+        </div>
+        <div class="calc-row" id="shipping-charge-row">
+          <span>Delivery Charges</span>
+          <span id="summary-shipping">₹40</span>
+        </div>
+        <div class="calc-row">
+          <span>GST (5%)</span>
+          <span id="summary-gst">₹0</span>
+        </div>
+        <div class="calc-row grand-total-row">
+          <span>Grand Total</span>
+          <span id="summary-total">₹0</span>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-block btn-lg" id="proceed-checkout-btn">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <!-- CHECKOUT MODAL OVERLAY -->
+  <div class="modal-backdrop" id="checkout-modal-backdrop">
+    <div class="modal-container" id="checkout-modal" role="dialog" aria-modal="true" aria-label="Checkout">
+      <div class="modal-header">
+        <h3>Complete Your Feast Order</h3>
+        <button id="close-checkout-btn" class="close-btn"><i data-lucide="x"></i></button>
+      </div>
+      
+      <form id="checkout-form" class="checkout-form">
+        <!-- Progress Steps -->
+        <div class="checkout-steps">
+          <div class="step-indicator active" id="step-ind-1">1. Details</div>
+          <div class="step-indicator" id="step-ind-2">2. Address</div>
+          <div class="step-indicator" id="step-ind-3">3. Payment</div>
+        </div>
+
+        <!-- Step 1: Personal Details -->
+        <div class="checkout-step-content" id="checkout-step-1">
+          <h4 class="step-title">Enter Contact Information</h4>
+          <p class="step-description">We need this to send order confirmation and tracking details.</p>
+          
+          <div class="form-group">
+            <label for="bill-name">Full Name *</label>
+            <input type="text" id="bill-name" required placeholder="Ex. Vikram Singh">
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="bill-phone">Phone Number *</label>
+              <input type="tel" id="bill-phone" required pattern="[0-9]{10}" placeholder="10-digit mobile number">
+              <small class="help-text">Used for live tracking notifications & loyalty verification.</small>
+            </div>
+            <div class="form-group">
+              <label for="bill-email">Email Address</label>
+              <input type="email" id="bill-email" placeholder="name@example.com">
+            </div>
+          </div>
+
+          <div class="step-footer">
+            <div></div> <!-- space filler -->
+            <button type="button" class="btn btn-primary next-step-btn" data-next="2">Next Step <i data-lucide="chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 2: Address / Table Selection -->
+        <div class="checkout-step-content hidden" id="checkout-step-2">
+          <h4 class="step-title" id="address-step-title">Delivery Address Details</h4>
+          <p class="step-description" id="address-step-desc">Provide accurate address to ensure hot and timely delivery.</p>
+
+          <div class="delivery-fields-wrapper" id="delivery-fields-wrapper">
+            <div class="form-group">
+              <label for="bill-address">Flat/House No., Building Name, Street *</label>
+              <input type="text" id="bill-address" placeholder="Ex. Flat 405, Block B, Heritage Heights">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bill-locality">Locality / Sector *</label>
+                <input type="text" id="bill-locality" placeholder="Ex. Sector 15">
+              </div>
+              <div class="form-group">
+                <label for="bill-landmark">Landmark / Instructions</label>
+                <input type="text" id="bill-landmark" placeholder="Ex. Near Central Park">
+              </div>
+            </div>
+          </div>
+
+          <div class="pickup-fields-wrapper hidden" id="pickup-fields-wrapper">
+            <div class="form-group">
+              <label for="bill-pickup-time">Estimated Pickup Time *</label>
+              <select id="bill-pickup-time">
+                <option value="15mins">In 15 Minutes</option>
+                <option value="30mins" selected>In 30 Minutes</option>
+                <option value="1hour">In 1 Hour</option>
+                <option value="later">Sometime Later (Call to coordinate)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bill-table-no">Table Number (If dining in-store)</label>
+              <input type="text" id="bill-table-no" placeholder="Ex. Table 5 (Leave blank if picking up to-go)">
+            </div>
+          </div>
+
+          <div class="step-footer">
+            <button type="button" class="btn btn-outline prev-step-btn" data-prev="1"><i data-lucide="chevron-left"></i> Back</button>
+            <button type="button" class="btn btn-primary next-step-btn" id="addr-next-btn">Next: Payment <i data-lucide="chevron-right"></i></button>
+          </div>
+        </div>
+
+        <!-- Step 3: Payment Section -->
+        <div class="checkout-step-content hidden" id="checkout-step-3">
+          <h4 class="step-title">Select Payment Mode</h4>
+          <p class="step-description">All transactions are simulated and secured with sandbox credentials.</p>
+
+          <div class="payment-methods-grid">
+            <!-- UPI Option -->
+            <label class="payment-card">
+              <input type="radio" name="payment-method" value="upi" checked>
+              <div class="payment-card-inner">
+                <i data-lucide="qr-code" class="p-icon"></i>
+                <div class="p-details">
+                  <strong>Instant UPI QR</strong>
+                  <p>Scan & pay using GPay, PhonePe, Paytm</p>
+                </div>
+              </div>
+            </label>
+
+            <!-- Card Option -->
+            <label class="payment-card">
+              <input type="radio" name="payment-method" value="card">
+              <div class="payment-card-inner">
+                <i data-lucide="credit-card" class="p-icon"></i>
+                <div class="p-details">
+                  <strong>Debit / Credit Card</strong>
+                  <p>Visa, MasterCard, RuPay supported</p>
+                </div>
+              </div>
+            </label>
+
+            <!-- COD Option -->
+            <label class="payment-card">
+              <input type="radio" name="payment-method" value="cod">
+              <div class="payment-card-inner">
+                <i data-lucide="banknote" class="p-icon"></i>
+                <div class="p-details">
+                  <strong>Cash on Delivery (COD)</strong>
+                  <p>Pay cash or show QR to rider at door</p>
+                </div>
+              </div>
+            </label>
+          </div>
+
+          <!-- Dynamic payment input sub-panes -->
+          <div class="payment-panes-container">
+            <!-- UPI Pane -->
+            <div class="payment-pane" id="payment-pane-upi">
+              <div class="upi-qr-sim">
+                <svg class="qr-svg-sim" viewBox="0 0 100 100" width="100" height="100">
+                  <path d="M0,0 h30 v10 h-20 v20 h-10 z M70,0 h30 v30 h-10 v-20 h-20 z M0,70 h10 v20 h20 v10 h-30 z M90,90 h-20 v10 h30 v-30 h-10 z" fill="#4A0E17"></path>
+                  <rect x="15" y="15" width="20" height="20" fill="#4A0E17"></rect>
+                  <rect x="65" y="15" width="20" height="20" fill="#4A0E17"></rect>
+                  <rect x="15" y="65" width="20" height="20" fill="#4A0E17"></rect>
+                  <!-- random dots to simulate QR code -->
+                  <rect x="45" y="25" width="10" height="10" fill="#FF9933"></rect>
+                  <rect x="45" y="45" width="10" height="10" fill="#4A0E17"></rect>
+                  <rect x="25" y="45" width="10" height="10" fill="#FF9933"></rect>
+                  <rect x="65" y="45" width="10" height="10" fill="#FF9933"></rect>
+                  <rect x="45" y="65" width="10" height="10" fill="#4A0E17"></rect>
+                  <rect x="65" y="65" width="15" height="15" fill="#4A0E17"></rect>
+                </svg>
+                <div class="upi-instructions">
+                  <strong>Scan QR to pay ₹<span id="checkout-grand-total">0</span></strong>
+                  <p>Or Enter UPI ID below for collect request:</p>
+                  <input type="text" id="upi-id-input" placeholder="username@upi">
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Pane (hidden by default) -->
+            <div class="payment-pane hidden" id="payment-pane-card">
+              <div class="card-inputs-grid">
+                <div class="form-group card-number-group">
+                  <label for="card-num">Card Number</label>
+                  <input type="text" id="card-num" placeholder="4111 2222 3333 4444" pattern="[0-9\s]{16,19}">
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="card-expiry">Expiry Date</label>
+                    <input type="text" id="card-expiry" placeholder="MM/YY" pattern="[0-9]{2}/[0-9]{2}">
+                  </div>
+                  <div class="form-group">
+                    <label for="card-cvv">CVV</label>
+                    <input type="password" id="card-cvv" placeholder="123" pattern="[0-9]{3}">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- COD Pane (hidden by default) -->
+            <div class="payment-pane hidden" id="payment-pane-cod">
+              <div class="cod-disclaimer">
+                <i data-lucide="info" class="info-icon"></i>
+                <p>An additional service fee of ₹0 applies. Please prepare exact change of ₹<span id="checkout-grand-total-cod">0</span> for delivery agent convenience.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-footer">
+            <button type="button" class="btn btn-outline prev-step-btn" data-prev="2"><i data-lucide="chevron-left"></i> Back</button>
+            <button type="submit" class="btn btn-primary" id="place-order-submit-btn"><i data-lucide="check-circle-2"></i> Place Order (₹<span id="checkout-final-btn-amt">0</span>)</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ORDER TRACKING & CONFIRMATION MODAL OVERLAY -->
+  <div class="modal-backdrop" id="tracking-modal-backdrop">
+    <div class="modal-container tracking-modal-container" id="tracking-modal" role="dialog" aria-modal="true" aria-label="Order Tracking">
+      <div class="modal-header">
+        <h3>Order Status & Live Tracking</h3>
+        <button id="close-tracking-btn" class="close-btn"><i data-lucide="x"></i></button>
+      </div>
+
+      <div class="tracking-body">
+        <!-- Success Confirmation -->
+        <div class="tracking-header-success">
+          <div class="success-icon-badge">🎉</div>
+          <h3>Order Confirmed!</h3>
+          <p>Thank you for choosing Bajrang Sweets. Your sweet feast is being prepared with pure ingredients.</p>
+          <span class="order-id-label">Order ID: <strong id="lbl-tracking-order-id">BS-983742</strong></span>
+        </div>
+
+        <!-- Live Status Bar -->
+        <div class="tracking-status-flow">
+          <!-- Step 1 -->
+          <div class="status-step active" id="track-step-1">
+            <div class="step-circle"><i data-lucide="check"></i></div>
+            <div class="step-info">
+              <strong>Order Confirmed</strong>
+              <p id="track-time-1">12:55 PM</p>
+            </div>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="status-step" id="track-step-2">
+            <div class="step-circle"><i data-lucide="chef-hat"></i></div>
+            <div class="step-info">
+              <strong>Preparing in Kitchen</strong>
+              <p id="track-time-2">Under preparation</p>
+            </div>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="status-step" id="track-step-3">
+            <div class="step-circle"><i data-lucide="bike"></i></div>
+            <div class="step-info">
+              <strong id="track-title-step3">Out for Delivery</strong>
+              <p id="track-time-3">Pending kitchen handover</p>
+            </div>
+          </div>
+          
+          <!-- Step 4 -->
+          <div class="status-step" id="track-step-4">
+            <div class="step-circle"><i data-lucide="smile"></i></div>
+            <div class="step-info">
+              <strong id="track-title-step4">Delivered Safely</strong>
+              <p id="track-time-4">Awaiting rider arrival</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- ETA Timer Box -->
+        <div class="eta-box">
+          <i data-lucide="timer" class="eta-icon"></i>
+          <div>
+            <span class="eta-small">ESTIMATED ARRIVAL</span>
+            <h2 id="eta-display-text">25 - 35 Mins</h2>
+          </div>
+        </div>
+
+        <!-- Simulated Delivery Driver Profile -->
+        <div class="rider-profile-box" id="rider-profile-box">
+          <div class="rider-avatar">
+            <i data-lucide="user"></i>
+          </div>
+          <div class="rider-details">
+            <strong id="rider-name-txt">Ramesh Kumar</strong>
+            <span>Your Delivery Partner</span>
+            <p>⭐ 4.9 Rating | Fully Vaccinated</p>
+          </div>
+          <a href="tel:+919784842300" class="btn btn-icon-round" aria-label="Call rider"><i data-lucide="phone"></i></a>
+        </div>
+
+        <!-- Order Summary & Repeat Order -->
+        <div class="tracking-summary-panel">
+          <h4>Order Items</h4>
+          <ul id="tracking-items-list" class="tracking-items-list">
+            <!-- Dynamically populated -->
+          </ul>
+          <div class="tracking-summary-total">
+            <span>Amount Paid:</span>
+            <strong id="tracking-total-amount">₹0</strong>
+          </div>
+        </div>
+
+        <div class="tracking-actions">
+          <button class="btn btn-outline btn-block" id="repeat-order-btn"><i data-lucide="rotate-ccw"></i> Repeat Order</button>
+          <button class="btn btn-primary btn-block" id="continue-browsing-btn">Continue Browsing</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WISHLIST DRAWER MODAL -->
+  <div class="cart-drawer-backdrop" id="wishlist-drawer-backdrop"></div>
+  <aside class="cart-drawer wishlist-drawer" id="wishlist-drawer" role="dialog" aria-modal="true" aria-label="Favorites List">
+    <div class="cart-header">
+      <h3>Your Favorites (<span id="wishlist-drawer-count">0</span>)</h3>
+      <button id="close-wishlist-btn" class="close-btn" aria-label="Close wishlist"><i data-lucide="x"></i></button>
+    </div>
+    
+    <div class="cart-body" id="wishlist-items-container">
+      <!-- Generated via JS. Empty State shown by default -->
+      <div class="empty-cart-state">
+        <i data-lucide="heart" class="empty-cart-icon"></i>
+        <p>Your wishlist is empty.</p>
+        <p class="empty-subtext">Click the heart icon on any food item to save it for quick ordering later.</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Script tags -->
+  <script src="app.js"></script>
+</body>
+</html>
